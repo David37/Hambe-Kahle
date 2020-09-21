@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambe Kahle</title>
+    <link rel="shortcut icon" href="img/logo.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/booking.css" type="text/css">
+    <link  rel="stylesheet" href="css/style.css" >
+    
+    
+</head>
+<body>
+    <header>
+        <div >
+            <a href="index.html">
+                <img href="index.html" src="img/logo1.png" alt="Hambe Kahle logo" 
+                class="logo" height="160" width="auto">
+            </a>
+        </div>
+        <nav>
+            <div class="loginn">
+                <a href="" class="button">login</a>&nbsp &nbsp
+                <a href="" class="button ">register</a> 
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>|
+                <li><a href="">About Us</a></li>|
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="form-booking">
+        <form action="" method="post" class="main-form">
+            <div class="singleTrip">
+                    <input type="radio" name="single" id="single" value="single">
+                    <label for="single">Single Destination</label>
+            </div>
+            <div class="mutipleTrip">
+                <input type="radio" name="single" id="mutiple" value="multiple">
+                <label for="multiple">Multiple Destinations</label>
+            </div>
+            <div class="locations form-group">
+                    <label for="from">From</label>
+                    <select name="from" id="from"></select>
+                    <label for="to">To</label>
+                    <select name="to" id="to"></select>
+                    <label for="pickup">Pickup Point</label>
+                    <select name="pickup" id="pickup"></select>
+            </div>
+            <div class="dates form-group">
+                    <p>
+                        <label for="arrivalDate">Date of Arrival</label> <br>
+                        <input type="date" name="arrivalDate" id="arrivalDate">
+                    </p>
+                    <p>
+                        <label for="departureDate">Date of Departure</label><br>
+                        <input type="date" name="departureDate" id="departureDate">
+                    </p>
+                   
+            </div>
+            <div class="passangers form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" name="adults" id="adults">
+                    <label for="children">Children</label>
+                    <input type="number" name="children" id="children">
+
+            </div><br>
+            <input type="submit" name="startBooking" value="Start Booking">
+        </form>
+    </section>
+</body>
+</html>
