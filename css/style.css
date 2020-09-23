@@ -25,14 +25,14 @@ body{
     padding:.2em;
 }
 
-.button-accent{
+/* .button-accent{
     
 }
 
 .button-accent:hover,
 .button-accent:focus{
 
-}
+} */
 
 /*  header
 =========================*/
@@ -87,16 +87,14 @@ nav a:focus{
         left:0;
         text-align: left;
         padding: 0;
+        height: 197px;
     
     }
     nav{
         width: 100%;
-        float: left;
         border-bottom: 1px solid black;
-        
-        
     }
-   .loginn{
+   .login{
         float: right;
         text-align: right;
         padding:0 1em; 
@@ -104,7 +102,6 @@ nav a:focus{
    }
    .logo{
         margin: 0 0 -20px 0;
-
         padding: 0;
         
    }
