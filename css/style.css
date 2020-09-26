@@ -120,3 +120,84 @@ nav a:focus{
     background-size: cover;
     padding: 0 0 10em 0;
 }
+
+
+/*Modal
+=========================*/
+/* body{
+    position: fixed;
+} */
+
+.bg-modal{
+    width:100%;
+    height:100vh;
+    z-index: 1;
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-y: hidden;
+}
+
+.modal-content{
+    width:500px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+    position: relative;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),
+    0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalOpen;
+    animation-duration: 500ms;
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right:11px;
+    font-size:42px;
+    cursor:pointer;
+}
+
+@keyframes modalOpen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.facebook{
+    background-color:#1877f2;
+    color:white;
+    font-weight: bold;
+}
+
+.login-container{
+    display: inline-block;
+}
+
+.btn-outline-primary:hover{
+    color:black;
+}
+
+.social-login-container{
+    display: flex;
+}
+.btn-google{
+    flex:3;
+}
+.btn-facebook{
+    flex:7;
+}
+
+.input-login{
+    display:grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap:5px;
+    padding-bottom: 1em;
+}
+
+.input-login label { text-align:right; }
