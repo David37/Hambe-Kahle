@@ -201,3 +201,9 @@ nav a:focus{
 }
 
 .input-login label { text-align:right; }
+
+
+.loggedIn-button .user-menu{
+    display: none;
+}
+

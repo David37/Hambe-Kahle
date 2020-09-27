@@ -1,3 +1,14 @@
+<?php
+    //require_once("include/googleConfig.inc.php");
+    // if(isset($_SESSION['access_token'])){
+    //     header('Location: booking.html');
+    //     exit();
+    // }
+    //$loginURL=$gClient->createAuthUrl();
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,33 +21,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     crossorigin="anonymous">
     <link  rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript"> (function() 
+    { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; 
+    document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
 
     
 </head>
 
 <body>
-    <section class="home-booking"> 
-        <header>
-                <div >
-                    <a href="index.html">
-                        <img href="index.html" src="img/logo.png" alt="Hambe Kahle logo" 
-                        class="logo" height="160" width="auto">
-                    </a>
-                </div>
-                <nav>
-                    <div class="login">
-                        <a href="#" class="button" id="button">login</a>&nbsp &nbsp
-                        <a href="" class="button ">register</a> 
-                    </div>
-                    <ul>
-                        <li><a href="">Home</a></li>|
-                        <li><a href="">About Us</a></li>|
-                        <li><a href="">FAQ</a></li>
-                    </ul>
-                </nav>
-        </header>
-        
+    <section class="home-booking">
+        <?php require_once("header.php");?> 
         <div class="container"></div>
             <h1 class="home-title">Taking you to where you need to go</h1>
             <a href="booking.html" class="button button-accent">Create a booking now</a>
@@ -98,7 +93,7 @@
         <div class="social-login-container">
             <div class="row btn-facebook">
                 <div class="col-md-3">
-                    <a class="btn btn-outline-primary facebook" href="#" role="button" style="text-transform:none">
+                    <a class="btn btn-outline-primary facebook" href="<?php echo getFacebookLoginUrl(); ?>" role="button" style="text-transform:none">
                         <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" />
                         Facebook
                       </a>
@@ -106,7 +101,7 @@
             </div>
             <div class="row btn-google">
                <div class="col-md-3">
-                 <a class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
+                 <a class="btn btn-outline-dark" href="<?php echo $googleLoginURL?>" role="button" style="text-transform:none">
                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
                    Google
                  </a>
