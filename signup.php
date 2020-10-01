@@ -2,11 +2,10 @@
 
 <html lang="en">
 
-<?php require_once("include/head.html");?>
-<?php
+<?php   
+        require_once("include/head.html");
         session_start(); // validates if the user has logged in or not
-        if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']==true){
-            echo "you have already logged in";
+        if((isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']==true)){
             header("Location: index.php");
             exit();
         }
@@ -16,8 +15,8 @@
 ?>
 <body>
     <?php
-        require_once("header.php");
-        require_once("modal.php");
+        require_once("include/header.php");
+        require_once("include/modal.php");
     ?>
     <div class="wrapper-main">
         <section class="section-default">
