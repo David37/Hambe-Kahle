@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php   
-        require_once("include/head.html");
-        session_start(); // validates if the user has logged in or not
-        if(!(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']==true)){
-            echo "you have already logged in";
-            header("Location: index.php");
-            exit();
-        }
-        else{
-            session_destroy();
-        }
-?>
+<?php require_once("include/head.html"); ?>
 <body>
     <?php 
         require_once("include/header.php");
+        if(!(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']==true)){
+            header("Location: index.php");
+            exit();
+        }
         require_once("include/modal.php");
     ?>
     <div class="admin-wrapper">
