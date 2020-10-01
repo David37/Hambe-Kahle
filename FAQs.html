@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="shortcut icon" href="img/logo.ico"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+   
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: center;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>
+        
+        <style>
+        .collapsible {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: #555;
+        }
+        
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #f1f1f1;
+        }
+        </style>
+</head>
+<body>
+
+    <header>
+        <div >
+            <a href="index.html">
+                <img href="index.html" src="img/logo.png" alt="Hambe Kahle logo" 
+                class="logo" height="160" width="auto">
+            </a>
+        </div>
+
+        <nav>
+            <div class="login">
+                <a href="" class="button">login</a>&nbsp &nbsp
+                <a href="" class="button ">register</a> 
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>|
+                <li><a href="">About Us</a></li>|
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <h2>Frequently Asked Questions</h2>
+    
+    <button class="accordion">How to make a booking with Hamba Kahle?</button>
+    <div class="panel">
+        <p>You need to register an account on the Homepage of Hamba Kahle Transportation. Once, you have created an account then all of the services are available to you.
+            There is a booking option that you need to click on to start your process. It will lead you to the booking form where you will have to fill in the necessary details.
+            Please make sure that the information that you fill in is the correct details of your trip. 
+        </p>
+    </div>
+
+    <br>
+    <button class="accordion">How much is it to make a booking?</button>
+    <div class="panel">
+        <p>
+            The amount that you will have to pay depends on the details of your trip. To explain further, the travel distance is mostly what your payment depends on. 
+            Another factor that contributes to the price is the time of year that you are travelling in. Example, if it is during the festive or Easter season where demand for transportation service is high then price is likely to increase as well. 
+            However, the total price remains affordable for our clients.
+        </p>
+    </div>
+
+    <button class="accordion">How do I make payment?</button>
+    <div class="panel">
+        <p>
+            On the About Us, there are banking details for Hamba Kahle Transportation. Please use your username as the reference when making payment so that it is known who the payment is from.
+            Your payment will be confirmation of your booking, therefore please make payment after booking is made on your account. 
+        </p>
+    </div>
+
+    <button class="accordion">Can I cancel a booking?</button>
+    <div class="panel">
+        <p>
+            Yes, you can cancel a booking that you have made with us. You will have to either make a call or email us for your cancelation.
+            If the cancelation is made 48 hours or more before the departure date then 60% will be refunded to the client. But, if a client cancels less than 48 hours before departure date then only 35% will be refunded.
+        </p>
+    </div>
+
+    <button class="accordion">Can I make changes to my booking?</button>
+    <div class="panel">
+        <p>
+            Yes, you can make changes to your booking but these changes will have to be made 48 hours before the 'old' departure date.
+            You will have to call or email us to make these booking changes. This however does not guarantee that there will be available vehicles for your new trip but everything will be communicated to you by our office.
+            If we have a full booking for your new trip then you will receive your refund. If there is space then your new trip details will be emailed to you. 
+        </p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+    
+</body>
+</html>
