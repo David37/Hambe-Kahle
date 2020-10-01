@@ -1,41 +1,32 @@
-<!DOCTYPE html>
+
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
 
-<header>
-        <div >
-            <a href="index.html">
-                <img href="index.html" src="img/logo.png" alt="Hambe Kahle logo" 
-                class="logo" height="160" width="auto">
-            </a>
-        </div>
-        <nav>
-            <div class="loginn">
-                <a href="" class="button">login</a>&nbsp &nbsp
-                <a href="" class="button ">register</a> 
-            </div>
-            <ul>
-                <li><a href="">Home</a></li>|
-                <li><a href="">About Us</a></li>|
-                <li><a href="">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-
+<?php require_once("include/head.html");?>
+<?php
+        session_start(); // validates if the user has logged in or not
+        if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']==true){
+            echo "you have already logged in";
+            header("Location: index.php");
+            exit();
+        }
+        else{
+            session_destroy();
+        }
+?>
 <body>
-
+    <?php
+        require_once("header.php");
+        require_once("modal.php");
+    ?>
     <div class="wrapper-main">
         <section class="section-default">
             <h1>Sign Up</h1>
             <p>Please fill in the form to create an account with Hamba Kahle.<br>
             It is important that you fill in your correct details.</p>
+        </section>
     
-    <form action="register.php" method="POST">
+    <form action="signup.api.php" method="POST">
         <div><br>
             <label for="firstName"><b>First Name:</b></label><br>
             <input type="text" class="form-control" name="f-name" id="f-name" placeholder="Enter first name" required><br>
@@ -56,7 +47,7 @@
 
         <div><br>
             <label for="email"><b>Email:</b></label><br>
-            <input type="text" class="form-control" name="mail" id="mail" placeholder="Enter email" required><br>
+            <input type="text" class="form-control" name="email" id="email" placeholder="Enter email" required><br>
             </label>
         </div>
 
