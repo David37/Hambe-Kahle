@@ -42,3 +42,17 @@ html, body{
     padding:40px 100px 100px;
     overflow-y: scroll;
 }
+
+table{
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 100%;
+    border: 1px black solid;
+}
+th{
+    border-bottom: 1px black solid;
+}
+.button-group h1, .button-group form{
+    text-align: left;
+}
+
