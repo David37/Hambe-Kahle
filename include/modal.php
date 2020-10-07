@@ -3,7 +3,7 @@
     <div class="modal-content">
         <div class="close">&times;</div>
         <h3 style="text-align:left;">Sign In</h3>
-        <form style="border-bottom: 2px black solid; padding:.7em;" action="include/login.inc.php" method="POST">
+        <form style="border-bottom: 2px black solid; padding:.7em;" action="include/configs/login.inc.php" method="POST">
             <div class="input-login">
                 <label for="email" >E-mail Address:</label>
                 <input type="email" name="email" id="email" placeholder="email" 
