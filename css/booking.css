@@ -1,0 +1,87 @@
+.main-form{
+    border-style: solid ;
+    padding:1em; 
+    display: grid;
+    grid-template-columns:1fr;
+    text-align:justify;
+}
+
+p{
+    display: grid;
+}
+
+.trip-type{
+    text-align: center;
+}
+
+
+.locations{
+    display: grid;
+    
+}
+
+.dates{
+    display: grid;
+    grid-template-columns: 100fr;
+    grid-gap:.1em;
+}
+
+.passangers{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: .5em;
+}
+
+input[type=number]{
+    width: 3rem;
+}
+
+input[type=submit]{
+    width: auto;
+}
+.submit{
+    left:0;
+    right:0;
+    transform: translate(auto);
+}
+
+@media(min-width:680px){
+
+    .main-form{
+        border-style: solid ;
+        padding:1em; 
+        display: grid;
+        grid-template-columns:1fr;
+        text-align: justify;
+    }
+    .trip-type{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: .5em 0 1em 0;
+        text-align: justify;
+    }
+    .locations{
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .dates, .passangers{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .submit{
+        left:0;
+        right:0;
+        transform: translate(145%);
+    }
+    p{
+        display: inline;   
+    }
+    input[type=submit]{
+        width: 25%;
+    }
+
+   
+}
+  

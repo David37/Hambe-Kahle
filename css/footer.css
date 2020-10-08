@@ -1,0 +1,38 @@
+.footer-basic-centered{
+	background-color: lightskyblue;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal;
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  lightgrey;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  lightgrey;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  white;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+footer{
+	border-radius: 20px;
+}

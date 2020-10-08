@@ -1,0 +1,58 @@
+html, body{
+    height:100%;
+}
+
+.admin-wrapper{
+    display:flex;
+    height: calc(100% - 200px);
+}
+
+.admin-wrapper .left-sidebar{
+    flex:2;
+    height: 100%;
+    background: #234a57;
+}
+
+.admin-wrapper .left-sidebar ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    color:white;
+}
+.admin-wrapper .left-sidebar li{
+    margin:1em;
+}
+.admin-wrapper .left-sidebar ul li a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .8rem;
+    border-bottom: 1px solid #004044;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover,
+.admin-wrapper .left-sidebar ul li a:focus{
+    background: #004044;
+}
+
+.admin-wrapper .admin-content{
+    flex:8;
+    height: 100%;
+    padding:40px 100px 100px;
+    overflow-y: scroll;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 100%;
+    border: 1px black solid;
+}
+th{
+    border-bottom: 1px black solid;
+}
+.button-group h1, .button-group form{
+    text-align: left;
+}
+
