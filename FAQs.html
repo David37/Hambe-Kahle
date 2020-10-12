@@ -5,60 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions</title>
     <link rel="shortcut icon" href="img/logo.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/FAQs.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
    
-    <style>
-        .accordion {
-          background-color: #eee;
-          color: #444;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: center;
-          outline: none;
-          font-size: 15px;
-          transition: 0.4s;
-        }
-        
-        .active, .accordion:hover {
-          background-color: #ccc; 
-        }
-        
-        .panel {
-          padding: 0 18px;
-          display: none;
-          background-color: white;
-          overflow: hidden;
-        }
-        </style>
-        
-        <style>
-        .collapsible {
-          background-color: #777;
-          color: white;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-        }
-        
-        .active, .collapsible:hover {
-          background-color: #555;
-        }
-        
-        .content {
-          padding: 0 18px;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-          background-color: #f1f1f1;
-        }
-        </style>
+    
 </head>
 <body>
 
@@ -84,7 +36,7 @@
 
     </header>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2><b>Frequently Asked Questions</b></h2><br>
     
     <button class="accordion">How to make a booking with Hamba Kahle?</button>
     <div class="panel">
@@ -107,9 +59,64 @@
     <button class="accordion">How do I make payment?</button>
     <div class="panel">
         <p>
-            On the About Us, there are banking details for Hamba Kahle Transportation. Please use your username as the reference when making payment so that it is known who the payment is from.
+            On the About Us page, there are banking details for Hamba Kahle Transportation. Please use your username as the reference when making payment so that it is known who the payment is from.
             Your payment will be confirmation of your booking, therefore please make payment after booking is made on your account. 
         </p>
+    </div>
+
+    <button class="accordion">Which documents should a passenger carry?</button>
+    <div class="panel">
+      <p>
+        The person that made the booking should have carry their identification document and proof of travel (ticket with travel details sent via email).
+      </p>
+    </div>
+
+    <button class="accordion">How much luggage is allowed?</button>
+    <div class="panel">
+      <p>
+        Passengers are allowed 30 kg of luggage. However, if the passengers have more than 30 kg of luggage then they can indicate on their booking that they require a trailer for travelling. 
+        The trailer is medium-sized and enclosed therefore can accomodate more luggage for the passengers. The additional trailer will be at no extra cost.
+      </p>
+    </div>
+
+    <button class="accordion">Are there any stops during the journey?</button>
+    <div class="panel">
+      <p>
+        Yes. The number of stops will depend on the length of the journey. 
+        The stops will be at petrol stations with bathrooms and food outlets. The driver will allow the stop to be approximately 15 - 20 minutes.
+      </p>
+    </div>
+
+    <button class="accordion">Are pregnant passengers allowed?</button>
+    <div class="panel">
+      <p>
+        Yes, pregnant persons are allowed to travel using Hamba Kahle Transportation. 
+        However, if the pregnant passenger is over 7 months pregnant then they will require a medical certificate stating that they are fit to travel.  
+      </p>
+    </div>
+
+    <button class="accordion">Can passengers with special needs travel with Hamba Kahle?</button>
+    <div class="panel">
+      <p>
+        Yes. We as Hamba Kahle Transportation do accomodate passengers with special needs. 
+        If extra space is required for a wheelchair then a trailer will be provided.
+      </p>
+    </div>
+
+    <button class="accordion">Alcohol/Drugs/Smoking</button>
+    <div class="panel">
+      <p>
+        Alcohol is not allowed to be consumed on our transport while travelling. Intoxicated persons will not be allowed on our transport because of behaviour associated with intoxicated persons. 
+        Any form of recreational drugs are not to be used during travel. Smoking is also prohibited and this includes electronic smoking as well.
+        It is important that these rules be followed. 
+      </p>
+    </div>
+
+    <button class="accordion">Can passengers travel with pets?</button>
+    <div class="panel">
+      <p>
+        No. Animals are not allowed on Hamba Kahle Transportation cars except for guide dogs accompanying blind people. 
+      </p>
     </div>
 
     <button class="accordion">Can I cancel a booking?</button>
@@ -129,6 +136,7 @@
         </p>
     </div>
 
+
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -144,30 +152,31 @@
             }
           });
         }
-        </script>
+    </script>
+
+
     
 </body>
-    
 <footer class="footer-basic-centered">
 
-    <div class="footer-company-logo" style="text-align: center" >
-        <a href="index.html">
-            <img href="index.html" src="img/logo.png" alt="Hambe Kahle logo" 
-            class="logo" height="160" width="auto">
-        </a>
-    </div>
+  <div class="footer-company-logo" style="text-align: center" >
+      <a href="index.html">
+          <img href="index.html" src="img/logo.png" alt="Hambe Kahle logo" 
+          class="logo" height="160" width="auto">
+      </a>
+  </div>
 
-    <p class="footer-company-motto">"Let us drive you safely to your destination."</p>
+  <p class="footer-company-motto">"Let us drive you safely to your destination."</p>
 
-    <p class="footer-links">
-        <a href="index.php">Home</a>
-        ·
-        <a href="About_Us.html">About Us</a>
-        ·
-        <a href="FAQs.html">FAQ</a>
-    </p>
+  <p class="footer-links">
+      <a href="index.php">Home</a>
+      ·
+      <a href="About_Us.html">About Us</a>
+      ·
+      <a href="FAQs.html">FAQ</a>
+  </p>
 
-    <p class="footer-company-name">Hamba Kahle Transports &copy; 2020</p>
+  <p class="footer-company-name">Hamba Kahle Transports &copy; 2020</p>
 
 </footer>
 </html>
