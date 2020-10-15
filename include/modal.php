@@ -3,14 +3,17 @@
     <div class="modal-content">
         <div class="close">&times;</div>
         <h3 style="text-align:left;">Sign In</h3>
-        <form style="border-bottom: 2px black solid; padding:.7em;" action="include/configs/login.inc.php" method="POST">
+        <form style="border-bottom: 2px black solid; padding:.7em;" action="include/configs/login.api.php" method="POST">
             <div class="input-login">
                 <label for="email" >E-mail Address:</label>
                 <input type="email" name="email" id="email" placeholder="email" 
-                       value= "<?php if(isset($_COOKIE['email_cookie'])){echo $_COOKIE['email_cookie'];}?>" required>
+                       value= "<?php if(isset($_COOKIE['email_cookie'])){echo $_COOKIE['email_cookie'];} 
+                                     elseif(isset($_GET['email']) && isset($_GET['error'])){echo $_GET['email'];}?>" required>
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="" placeholder="password" 
-                       value="<?php if(isset($_COOKIE['password_cookie'])){echo $_COOKIE['password_cookie'];}?>" required>
+                <input type="password" name="password" id="" placeholder="<?php if(isset($_GET['error']) && $_GET['error']=="pwd")
+                                                                                    echo "password is incorrect";
+                                                                                else echo "password";?>" 
+                       value="<?php if(isset($_COOKIE['password_cookie'])){echo $_COOKIE['password_cookie'];} ?>" required>
                 <p></p>
                 <p style="display:grid; grid-template-columns: .1fr max-content; margin:8px 0 0 0;">
                     <input type="checkbox" name="rememberMe" id="rememberMe" style="margin-bottom:1em;"
@@ -18,7 +21,7 @@
                     <label for="rememberMe" style="margin-top:-.2em;">Remember Me</label>
                 </p>
                 <p></p>
-                <a href="#" style="text-align:left; margin-top:-.7em;">Forgot your password?</a>
+                <a href="reset-password.php" style="text-align:left; margin-top:-.7em;">Forgot your password?</a>
                 <p></p>
                 <input type="submit" name="login-submit" value="Sign In" style="width:33%">
             </div>
@@ -43,7 +46,7 @@
                </div>
            </div>
         </div>
-        <p style="padding:1em 0 0 0; text-align: left;">Create a new account?  <a href="#">  Register</a></p>
+        <p style="padding:1em 0 0 0; text-align: left;">Create a new account?  <a href="signup.php">  Register</a></p>
     </div>
 </div>
 </html>
@@ -88,7 +91,9 @@
             window.location.replace((window.location.href).replace(\"#\",\"\"));
         }
     </script>";
-}?>
+}
+
+?>
 
 
 
