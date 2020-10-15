@@ -25,7 +25,7 @@
             It is important that you fill in your correct details.</p>
         </section>
     
-    <form action="signup.api.php" method="POST">
+    <form action="include/configs/signup.api.php" method="POST">
         <div><br>
             <label for="firstName"><b>First Name:</b></label><br>
             <input type="text" class="form-control" name="f-name" id="f-name" placeholder="Enter first name" required><br>
